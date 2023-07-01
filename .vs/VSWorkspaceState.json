@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LinkedListImplementation"
+    "\\LinkedListImplementation",
+    "\\LinkedListImplementation\\LinkedList",
+    "\\LinkedListImplementation\\LinkedList\\LinkedList"
   ],
-  "SelectedNode": "\\LinkedListImplementation",
+  "SelectedNode": "\\LinkedListImplementation\\LinkedList\\LinkedList.sln",
   "PreviewInSolutionExplorer": false
 }
