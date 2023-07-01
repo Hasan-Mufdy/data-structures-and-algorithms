@@ -197,4 +197,4 @@ public void AddToTheLast(int data)
 
 ### white board screenshot
 
-![white board image](/assets/linkedlist insertion WB.jpg)
+![white board image](/assets/linkedlistinsertionWB.jpg)
