@@ -3,8 +3,9 @@
     "",
     "\\LinkedListImplementation",
     "\\LinkedListImplementation\\LinkedList",
-    "\\LinkedListImplementation\\LinkedList\\LinkedList"
+    "\\LinkedListImplementation\\LinkedList\\LinkedList",
+    "\\LinkedListImplementation\\LinkedList\\LinkedListTest"
   ],
-  "SelectedNode": "\\LinkedListImplementation\\LinkedList\\LinkedList.sln",
+  "SelectedNode": "\\LinkedListImplementation\\LinkedList\\LinkedListTest\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
