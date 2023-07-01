@@ -37,7 +37,17 @@ internal class Program
         // to print values
         Console.WriteLine(myList.ToString());
         ////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////
+        Console.WriteLine("after insert before:");
+        myList.InsertBefore(5, 10);
+        Console.WriteLine(myList.ToString());
+        Console.WriteLine("after insert after:");
+        myList.InsertAfter(5, 20);
+        Console.WriteLine(myList.ToString());
+        ////////////////////////////////////////////////////////////////////
+        Console.ReadLine();
     }
+   
 }
 
 public class Node
@@ -107,4 +117,59 @@ public class LinkedList
         // res += "}";
         return res;
     }
+
+    /////////////////////////////// insert after and insert before methods:
+    public void InsertAfter(int value, int newValue)
+    {
+        Node newNode = new Node(newValue);
+
+        if (head == null)
+        {
+            return;
+        }
+        Node current = head;
+        while (current != null)
+        {
+            if (current.Data == value)
+            {
+                newNode.Next = current.Next;
+                current.Next = newNode;
+                if (current == tail)
+                {
+                    tail = newNode; // in case of inserting at the last node
+                }
+                return;
+            }
+            current = current.Next;
+        }
+    }
+
+    public void InsertBefore(int value, int newValue)
+    {
+        Node newNode = new Node(newValue);
+
+        if (head == null)
+        {
+            return;
+        }
+
+        if (head.Data == value)
+        {
+            newNode.Next = head;
+            head = newNode;
+            return;
+        }
+        Node current = head;
+        while (current.Next != null)
+        {
+            if (current.Next.Data == value)
+            {
+                newNode.Next = current.Next;
+                current.Next = newNode;
+                return;
+            }
+            current = current.Next;
+        }
+    }
+
 }

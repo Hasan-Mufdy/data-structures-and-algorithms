@@ -5,3 +5,4 @@
 - [array insert shift](/arrayinsertshift/README.md)
 - [array binary search](/arraybinarysearch/README.md)
 - [Linked Lists](/linkedlist/README.md)
+- [Linked Lists insertion](/linkedlistinsertion/README.md)

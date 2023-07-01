@@ -76,5 +76,75 @@ namespace LinkedListTest
             string result = linkedList.ToString();
             Assert.Equal(expected, result);
         }
+        ///////////////////////////////////////////
+        [Fact]
+        public void AddMultipleNodesToTheEnd()
+        {
+            LinkedList linkedList = new LinkedList();
+            linkedList.AddToTheLast(1);
+            linkedList.AddToTheLast(2);
+            linkedList.AddToTheLast(3);
+            string expected = "{1}{2}{3}";
+            string result = linkedList.ToString();
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void InsertNodeBeforeTheMiddleNode()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(1);
+            myList.AddToTheLast(2);
+            myList.AddToTheLast(3);
+
+            myList.InsertBefore(2, 10); ///////
+
+            Assert.Equal("{1}{10}{2}{3}", myList.ToString());
+        }
+        [Fact]
+
+
+
+        public void InsertNodeBeforeTheFirstNode()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(1);
+            myList.AddToTheLast(2);
+            myList.AddToTheLast(3);
+
+            myList.InsertBefore(1, 10);
+
+            Assert.Equal("{10}{1}{2}{3}", myList.ToString());
+        }
+        [Fact]
+        public void InsertNodeAfterTheMiddleNode()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(1);
+            myList.AddToTheLast(2);
+            myList.AddToTheLast(3);
+
+            myList.InsertAfter(2, 10);
+
+            Assert.Equal("{1}{2}{10}{3}", myList.ToString());
+        }
+
+        [Fact]
+        public void InsertNodeAfterTheLastNode()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(1);
+            myList.AddToTheLast(2);
+            myList.AddToTheLast(3);
+
+            myList.InsertAfter(3, 10);
+
+            Assert.Equal("{1}{2}{3}{10}", myList.ToString());
+        }
+
     }
 }
