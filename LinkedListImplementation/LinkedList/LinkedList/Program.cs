@@ -50,6 +50,10 @@ internal class Program
         Console.WriteLine(myList.ToString());
 
         ////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////
+        Console.WriteLine("kth method test with input 2:");
+        Console.WriteLine(myList.kthFromTheEnd(2));
+        ////////////////////////////////////////////////////////////////////
         Console.ReadLine();
     }
    
@@ -195,5 +199,36 @@ public class LinkedList
             current = current.Next;
         }
     }
+
+    //////////////////////////////////////////////// kth:
+    public int kthFromTheEnd(int k)
+    {
+        // no need to use it because it is not empty now.
+        //if (head == null)
+        //{
+        //    throw new InvalidOperationException("the list is empty, add elements to the list...");
+        //}
+
+        Node slow = head;
+        Node fast = head;
+
+        for (int i = 0; i < k; i++)
+        {
+            if (fast == null)
+            {
+                throw new ArgumentOutOfRangeException("k");
+            }
+            fast = fast.Next;
+        }
+
+        while (fast != null)
+        {
+            slow = slow.Next;
+            fast = fast.Next;
+        }
+        return slow.Data;
+    }
+
+
 
 }
