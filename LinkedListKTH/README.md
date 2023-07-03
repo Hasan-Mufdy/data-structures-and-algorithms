@@ -10,7 +10,7 @@ Write a method in the LinkedList class that was created previously, that finds t
 2. k and the length of the list are the same
 3. k is not a positive integer
 4. the linked list is of a size 1
-5. “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+5. â€œHappy Pathâ€ where k is not at the end, but somewhere in the middle of the linked list
  
 
 ### algorithm
@@ -125,4 +125,4 @@ public int kthFromTheEnd(int k)
 
 ### white board screenshot
 
-![white board image](/assets/linkedlist.jpg)
+![white board image](/assets/kthwb.jpg)
