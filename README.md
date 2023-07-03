@@ -6,3 +6,4 @@
 - [array binary search](/arraybinarysearch/README.md)
 - [Linked Lists](/linkedlist/README.md)
 - [Linked Lists insertion](/linkedlistinsertion/README.md)
+- [linked list kth](/LinkedListKTH/README.md)

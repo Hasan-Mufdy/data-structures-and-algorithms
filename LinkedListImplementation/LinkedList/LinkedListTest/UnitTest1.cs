@@ -145,6 +145,72 @@ namespace LinkedListTest
 
             Assert.Equal("{1}{2}{3}{10}", myList.ToString());
         }
+        //////////////////////////////////////////////////////////////////////////////////////
+
+        [Fact]
+        public void kthFromTheEnd_KGreaterThanLength_ThrowsException()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(5);
+            myList.AddToTheLast(10);
+            myList.AddToTheLast(15);
+
+            // assert with the exception:
+            Assert.Throws<ArgumentOutOfRangeException>(() => myList.kthFromTheEnd(4));
+        }
+
+        [Fact]
+        public void kthFromTheEnd_KEquals_Length_ReturnsLastValue()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(5);
+            myList.AddToTheLast(10);
+            myList.AddToTheLast(15);
+
+            int result = myList.kthFromTheEnd(3);
+
+            Assert.Equal(5, result);
+        }
+
+        [Fact]
+        public void kthFromTheEnd_KNegative_ThrowsException()
+        {
+            LinkedList myList = new LinkedList();
+            myList.AddToTheLast(5);
+            myList.AddToTheLast(10);
+            myList.AddToTheLast(15);
+
+            Assert.Throws<NullReferenceException>(() => myList.kthFromTheEnd(-1));
+        }
+
+        [Fact]
+        public void kthFromTheEnd_OneNodeList_ReturnsValue()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(5);
+
+            int result = myList.kthFromTheEnd(1);
+
+            Assert.Equal(5, result);
+        }
+        [Fact]
+        public void kthFromTheEnd_KInTheMiddle_ReturnsValue()
+        {
+            LinkedList myList = new LinkedList();
+
+            myList.AddToTheLast(5);
+            myList.AddToTheLast(10);
+            myList.AddToTheLast(15);
+            myList.AddToTheLast(20);
+
+            int result = myList.kthFromTheEnd(3);
+
+            Assert.Equal(10, result);
+        }
+
 
     }
 }
