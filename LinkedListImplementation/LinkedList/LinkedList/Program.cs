@@ -20,7 +20,7 @@ internal class Program
             currentNode = currentNode.Next;
         }
 
-        Console.WriteLine("Elments in the linked list after insetion");
+        Console.WriteLine("Elments in the linked list after insertion");
 
         Node currentNode2 = myList.head;
 
@@ -44,6 +44,11 @@ internal class Program
         Console.WriteLine("after insert after:");
         myList.InsertAfter(5, 20);
         Console.WriteLine(myList.ToString());
+
+        Console.WriteLine("After appending 8: ");
+        myList.Append(8);
+        Console.WriteLine(myList.ToString());
+
         ////////////////////////////////////////////////////////////////////
         Console.ReadLine();
     }
@@ -116,6 +121,25 @@ public class LinkedList
         }
         // res += "}";
         return res;
+    }
+
+    /////////////////////////////// append method:
+    public void Append(int data)
+    {
+        Node newNode = new Node(data);
+
+        if (head == null)
+        {
+            head = newNode;
+            tail = newNode;
+        }
+        else
+        {
+
+            tail.Next = newNode;
+
+            tail = newNode;
+        }
     }
 
     /////////////////////////////// insert after and insert before methods:

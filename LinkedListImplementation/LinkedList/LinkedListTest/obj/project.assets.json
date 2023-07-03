@@ -5538,9 +5538,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedListTest\\LinkedListTest.csproj",
+      "projectUniqueName": "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedListTest\\LinkedListTest.csproj",
       "projectName": "LinkedListTest",
-      "projectPath": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedListTest\\LinkedListTest.csproj",
+      "projectPath": "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedListTest\\LinkedListTest.csproj",
       "packagesPath": "C:\\Users\\HM\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedListTest\\obj\\",
       "projectStyle": "PackageReference",
@@ -5559,8 +5559,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedList\\LinkedList.csproj": {
-              "projectPath": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedList\\LinkedList.csproj"
+            "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedList\\LinkedList.csproj": {
+              "projectPath": "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\LinkedListImplementation\\LinkedList\\LinkedList\\LinkedList.csproj"
             }
           }
         }
