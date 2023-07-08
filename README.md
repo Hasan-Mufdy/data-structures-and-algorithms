@@ -7,3 +7,4 @@
 - [Linked Lists](/linkedlist/README.md)
 - [Linked Lists insertion](/linkedlistinsertion/README.md)
 - [linked list kth](/LinkedListKTH/README.md)
+- [Linked List Zip Merge](/LinkedListZip/README.md)

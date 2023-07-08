@@ -211,6 +211,35 @@ namespace LinkedListTest
             Assert.Equal(10, result);
         }
 
+        ///////////////////////////////////////////////////////////// for ziplists method:
+
+        [Fact]
+        public void If_Both_Lists_Are_Empty()
+        {
+            LinkedList myList1 = new LinkedList();
+            LinkedList myList2 = new LinkedList();
+
+            LinkedList mergedList = myList1.ZipLists(myList2);
+
+            Assert.Null(mergedList.head);
+            Assert.Null(mergedList.tail);
+            Assert.Equal(string.Empty, mergedList.ToString());
+        }
+
+        [Fact]
+        public void check_If_The_2_Lists_Are_Merged()
+        {
+            LinkedList list1 = new LinkedList();
+            list1.AddToTheLast(1);
+            list1.AddToTheLast(2);
+            LinkedList list2 = new LinkedList();
+            list2.AddToTheLast(3);
+            list2.AddToTheLast(4);
+
+            LinkedList mergedList = list1.ZipLists(list2);
+
+            Assert.Equal("{1}{3}{2}{4}", mergedList.ToString());
+        }
 
     }
 }

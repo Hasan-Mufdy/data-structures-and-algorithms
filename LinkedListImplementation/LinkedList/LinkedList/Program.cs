@@ -54,6 +54,22 @@ internal class Program
         Console.WriteLine("kth method test with input 2:");
         Console.WriteLine(myList.kthFromTheEnd(2));
         ////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////
+        
+        Console.WriteLine("merging 2 lists:");
+        // 1. the first list: myList which was already created
+        // 2. we need another list(myList2)
+        LinkedList myList2 = new LinkedList();
+        myList2.AddToTheLast(1000);
+        myList2.AddToTheLast(2000);
+        myList2.AddToTheLast(3000);
+
+        Console.WriteLine();
+        Console.WriteLine("the second list:  " + myList2.ToString());
+
+        LinkedList mergedList = myList.ZipLists(myList2);
+        Console.WriteLine("Merged list: " + mergedList.ToString());
+        ////////////////////////////////////////////////////////////////////
         Console.ReadLine();
     }
    
@@ -228,7 +244,28 @@ public class LinkedList
         }
         return slow.Data;
     }
+    //////////////////////////////////////////////////////////////////  merging method
 
+    public LinkedList ZipLists(LinkedList list2)
+    {
+        LinkedList mergedList = new LinkedList();
+        Node current1 = head;
+        Node current2 = list2.head;
 
+        while (current1 != null || current2 != null)
+        {
+            if (current1 != null)
+            {
+                mergedList.Append(current1.Data);
+                current1 = current1.Next;
+            }
+            if (current2 != null)
+            {
+                mergedList.Append(current2.Data);
+                current2 = current2.Next;
+            }
+        }
+        return mergedList;
+    }
 
 }
