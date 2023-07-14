@@ -1,0 +1,15 @@
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.csproj.AssemblyReference.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.AssemblyInfoInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.AssemblyInfo.cs
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.csproj.CoreCompileInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\bin\Debug\net7.0\stack-queue-implementation.exe
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\bin\Debug\net7.0\stack-queue-implementation.deps.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\bin\Debug\net7.0\stack-queue-implementation.runtimeconfig.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\bin\Debug\net7.0\stack-queue-implementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\bin\Debug\net7.0\stack-queue-implementation.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\refint\stack-queue-implementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\stack-queue-implementation.genruntimeconfig.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\stack-queue-implementation\stack-queue-implementation\obj\Debug\net7.0\ref\stack-queue-implementation.dll

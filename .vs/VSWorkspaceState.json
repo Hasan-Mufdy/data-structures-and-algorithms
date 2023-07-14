@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LinkedListImplementation",
+    "\\LinkedListImplementation\\LinkedList",
+    "\\LinkedListImplementation\\LinkedList\\LinkedList",
+    "\\stack-queue-implementation",
+    "\\stack-queue-implementation\\stack-queue-implementation",
+    "\\stacksandqueues"
   ],
-  "SelectedNode": "\\C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms",
+  "SelectedNode": "\\stacksandqueues\\README.md",
   "PreviewInSolutionExplorer": false
 }
