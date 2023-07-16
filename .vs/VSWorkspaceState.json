@@ -1,13 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\LinkedListImplementation",
-    "\\LinkedListImplementation\\LinkedList",
-    "\\LinkedListImplementation\\LinkedList\\LinkedList",
     "\\stack-queue-implementation",
     "\\stack-queue-implementation\\stack-queue-implementation",
+    "\\stack-queue-implementation\\StackQueueTest",
     "\\stacksandqueues"
   ],
-  "SelectedNode": "\\stacksandqueues\\README.md",
+  "SelectedNode": "\\stack-queue-implementation\\stack-queue-implementation.sln",
   "PreviewInSolutionExplorer": false
 }

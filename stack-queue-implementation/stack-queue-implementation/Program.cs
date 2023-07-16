@@ -31,7 +31,23 @@ public class Program
         Console.WriteLine(queue.Peek());
         Console.WriteLine(queue.IsEmpty());
 
+        /////////////////////////////////////
 
+        Console.WriteLine();
+
+        PseudoQueue pseudoQueue = new PseudoQueue();
+
+        pseudoQueue.Enqueue(1);
+        pseudoQueue.Enqueue(2);
+        pseudoQueue.Enqueue(3);
+        pseudoQueue.Enqueue(4);
+        pseudoQueue.Enqueue(5);
+
+        Console.WriteLine(pseudoQueue.Dequeue());
+
+        Console.WriteLine(pseudoQueue.Dequeue());
+
+        Console.WriteLine(pseudoQueue.Dequeue());
     }
 }
 
@@ -141,3 +157,83 @@ public class Queue
         return front == null;
     }
 }
+
+class PseudoQueue
+{
+    private Stack stack1;
+    private Stack stack2;
+
+    public PseudoQueue()
+    {
+        stack1 = new Stack();
+        stack2 = new Stack();
+    }
+
+    public void Enqueue(int value)
+    {
+        while (!stack2.IsEmpty())
+        {
+            stack1.Push(stack2.Pop());
+        }
+        stack1.Push(value);
+    }
+
+    public int Dequeue()
+    {
+        while (!stack1.IsEmpty())
+        {
+            stack2.Push(stack1.Pop());
+        }
+        return stack2.Pop();
+    }
+
+
+    //public void Enqueue(int value)
+    //{
+    //    stack1.Push(value);
+    //}
+
+    //public int Dequeue()
+    //{
+    //    if (IsEmpty())
+    //    {
+    //        throw new InvalidOperationException("The queue is empty...");
+    //    }
+
+    //    if (stack2.IsEmpty())
+    //    {
+    //        while (!stack1.IsEmpty())
+    //        {
+    //            stack2.Push(stack1.Pop());
+    //        }
+    //    }
+
+    //    return stack2.Pop();
+    //}
+
+    //public int Peek()
+    //{
+    //    if (IsEmpty())
+    //    {
+    //        throw new InvalidOperationException("The queue is empty...");
+    //    }
+
+    //    if (stack2.IsEmpty())
+    //    {
+    //        while (!stack1.IsEmpty())
+    //        {
+    //            stack2.Push(stack1.Pop());
+    //        }
+    //    }
+
+    //    return stack2.Peek();
+    //}
+
+    //public bool IsEmpty()
+    //{
+    //    return stack1.IsEmpty() && stack2.IsEmpty();
+    //}
+}
+   
+
+
