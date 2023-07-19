@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\stack-queue-implementation",
-    "\\stack-queue-implementation\\stack-queue-implementation",
-    "\\stack-queue-implementation\\StackQueueTest",
-    "\\stacksandqueues"
+    "\\stack-queue-implementation\\stack-queue-implementation"
   ],
-  "SelectedNode": "\\stack-queue-implementation\\stack-queue-implementation.sln",
+  "SelectedNode": "\\stack-queue-implementation\\stack-queue-implementation\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

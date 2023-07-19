@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\stack-queue-implementation\\stack-queue-implementation\\stack-queue-implementation.csproj",
+      "projectUniqueName": "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\stack-queue-implementation\\stack-queue-implementation\\stack-queue-implementation.csproj",
       "projectName": "stack-queue-implementation",
-      "projectPath": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\stack-queue-implementation\\stack-queue-implementation\\stack-queue-implementation.csproj",
+      "projectPath": "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\stack-queue-implementation\\stack-queue-implementation\\stack-queue-implementation.csproj",
       "packagesPath": "C:\\Users\\HM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HM\\source\\repos\\data-structures-and-algorithms\\stack-queue-implementation\\stack-queue-implementation\\obj\\",
+      "outputPath": "C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms\\stack-queue-implementation\\stack-queue-implementation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

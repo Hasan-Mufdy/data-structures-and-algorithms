@@ -48,6 +48,20 @@ public class Program
         Console.WriteLine(pseudoQueue.Dequeue());
 
         Console.WriteLine(pseudoQueue.Dequeue());
+
+        ///////////////////////////////////////////////
+        
+        Console.WriteLine();
+        Console.WriteLine();
+
+        Shelter Shelter = new Shelter();
+        Shelter.Enqueue(new Animal("cat", "cat1"));
+        Shelter.Enqueue(new Animal("dog", "dog1"));
+        Shelter.Enqueue(new Animal("dog", "dog2"));
+
+        Console.WriteLine(Shelter.Dequeue("dog").Name);
+        Console.WriteLine(Shelter.Dequeue("dog").Name);
+        // Console.WriteLine(Shelter.Dequeue("cat").Name);
     }
 }
 
@@ -234,6 +248,47 @@ class PseudoQueue
     //    return stack1.IsEmpty() && stack2.IsEmpty();
     //}
 }
-   
 
 
+////////////////////////////////////////////////////////////////// animal shelter
+///
+
+public class Animal
+{
+    public string Species { get; set; }
+    public string Name { get; set; }
+
+    public Animal(string species, string name)
+    {
+        Species = species;
+        Name = name;
+    }
+}
+
+public class Shelter
+{
+    private List<Animal> animals;
+
+    public Shelter()
+    {
+        animals = new List<Animal>();
+    }
+
+    public void Enqueue(Animal animal)
+    {
+        animals.Add(animal);
+    }
+
+    public Animal Dequeue(string pref) // this pref argument can be either cat or dog
+    {
+        foreach (Animal animal in animals)
+        {
+            if (animal.Species == pref)
+            {
+                animals.Remove(animal);
+                return animal;
+            }
+        }
+        return null;
+    }
+}
