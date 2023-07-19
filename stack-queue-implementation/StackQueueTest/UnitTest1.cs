@@ -155,5 +155,37 @@ namespace StackQueueTest
             Assert.Throws<InvalidOperationException>(() => queue.Dequeue());
             Assert.Throws<InvalidOperationException>(() => queue.Peek());
         }
+
+        //////// animal shelter methods test:
+        ///
+        [Fact]
+        public void Check_If_Dequeue_ReturnAnimal()
+        {
+            Shelter shelter = new Shelter();
+            Animal dog = new Animal("dog", "dog1");
+            Animal cat = new Animal("cat", "cat1");
+
+            shelter.Enqueue(dog);
+            shelter.Enqueue(cat);
+
+            Animal dequeuedDog = shelter.Dequeue("dog");
+            Animal dequeuedCat = shelter.Dequeue("cat");
+
+            Assert.Equal(dog, dequeuedDog);
+            Assert.Equal(cat, dequeuedCat);
+            
+        }
+
+        [Fact]
+        public void check_If_Dequeue_ReturnNull_When_there_Is_No_Match()
+        {
+            Shelter shelter = new Shelter();
+            Animal cat = new Animal("cat", "cat1");
+            shelter.Enqueue(cat);
+
+            Animal dequeuedDog = shelter.Dequeue("dog");
+
+            Assert.Null(dequeuedDog);
+        }
     }
 }
