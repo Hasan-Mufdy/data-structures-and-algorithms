@@ -187,5 +187,30 @@ namespace StackQueueTest
 
             Assert.Null(dequeuedDog);
         }
+        //////////////////////////////////////////////////////////// tests for PseudoQueue methods:
+
+        [Fact]
+        public void Enqueue_Add_Items_To_Queue()
+        {
+            PseudoQueue pseudoQueue = new PseudoQueue();
+
+            pseudoQueue.Enqueue(1);
+            pseudoQueue.Enqueue(2);
+            pseudoQueue.Enqueue(3);
+
+            Assert.Equal(1, pseudoQueue.Dequeue());
+            Assert.Equal(2, pseudoQueue.Dequeue());
+            Assert.Equal(3, pseudoQueue.Dequeue());
+        }
+
+        [Fact]
+        public void Throw_Exception_If_Empty()
+        {
+            PseudoQueue pseudoQueue = new PseudoQueue();
+
+            // (pseudoQueue is empty)
+
+            Assert.Throws<InvalidOperationException>(() => pseudoQueue.Dequeue());
+        }
     }
 }
