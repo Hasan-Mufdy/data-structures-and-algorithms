@@ -10,3 +10,4 @@
 - [Linked List Zip Merge](/LinkedListZip/README.md)
 - [Stack And Queue](/stacksandqueues/README.md)
 - [First-in, First out Animal Shelter](/AnimalShelter-FIFO/README.md)
+- [Multi-bracket Validation.](/bracketValidation/README.md)

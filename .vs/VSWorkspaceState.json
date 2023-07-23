@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\stack-queue-implementation",
+    "\\stack-queue-implementation\\StackQueueTest"
   ],
-  "SelectedNode": "\\C:\\Users\\HM\\Source\\Repos\\data-structures-and-algorithms",
+  "SelectedNode": "\\stack-queue-implementation\\StackQueueTest\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
