@@ -1,3 +1,4 @@
+
 namespace StackQueueTest
 {
     public class UnitTest1
@@ -211,6 +212,42 @@ namespace StackQueueTest
             // (pseudoQueue is empty)
 
             Assert.Throws<InvalidOperationException>(() => pseudoQueue.Dequeue());
+        }
+        /////////////////////////////////////////////////////////////////////////////////// brackets
+        [Fact]
+        public void ChecK_If_Balanced()
+        {
+            // Arrange
+            string input1 = "{([[[]]])}";
+            string input2 = "{[]}";
+
+            // Act
+            bool result1 = BracketValidator.ValidateBrackets(input1);
+            bool result2 = BracketValidator.ValidateBrackets(input2);
+
+            // Assert
+            Assert.True(result1);
+            Assert.True(result2);
+
+        }
+
+        [Fact]
+        public void ChecK_If_Not_Balanced()
+        {
+            // Arrange
+            string input1 = "{((}}";
+            string input2 = "{}}";
+
+
+            // Act
+            bool result1 = BracketValidator.ValidateBrackets(input1);
+            bool result2 = BracketValidator.ValidateBrackets(input2);
+
+
+            // Assert
+            Assert.False(result1);
+            Assert.False(result2);
+
         }
     }
 }
