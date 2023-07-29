@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\stack-queue-implementation",
-    "\\stack-queue-implementation\\StackQueueTest"
+    "\\assets"
   ],
-  "SelectedNode": "\\stack-queue-implementation\\StackQueueTest\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }
