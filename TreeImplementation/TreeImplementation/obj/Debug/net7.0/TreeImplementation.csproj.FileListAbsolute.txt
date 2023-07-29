@@ -1,0 +1,15 @@
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\bin\Debug\net7.0\TreeImplementation.exe
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\bin\Debug\net7.0\TreeImplementation.deps.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\bin\Debug\net7.0\TreeImplementation.runtimeconfig.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\bin\Debug\net7.0\TreeImplementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\bin\Debug\net7.0\TreeImplementation.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.csproj.AssemblyReference.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.AssemblyInfoInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.AssemblyInfo.cs
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.csproj.CoreCompileInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\refint\TreeImplementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\TreeImplementation.genruntimeconfig.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\TreeImplementation\TreeImplementation\obj\Debug\net7.0\ref\TreeImplementation.dll
