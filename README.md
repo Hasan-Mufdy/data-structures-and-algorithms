@@ -12,3 +12,4 @@
 - [First-in, First out Animal Shelter](/AnimalShelter-FIFO/README.md)
 - [Multi-bracket Validation.](/bracketValidation/README.md)
 - [Trees](/trees/README.md)
+- [tree-max](/trees/README.md)

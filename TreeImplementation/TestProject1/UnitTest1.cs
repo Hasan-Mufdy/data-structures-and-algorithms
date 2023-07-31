@@ -90,5 +90,36 @@ namespace TestProject1
             Assert.False(binarySearchTree.Contains(1));
             Assert.False(binarySearchTree.Contains(10));
         }
+
+        /////////////////////////////////////////////////
+
+        [Fact]
+        public void MaximumValue_OneNodeTree_ShouldReturnSingleNodeValue()
+        {
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.Root = new Node<int>(42);
+
+            int max = tree.MaximumValue();
+
+            Assert.Equal(42, max);
+        }
+
+        [Fact]
+        public void MaximumValue_MultipleNodes_ShouldReturnMaximumValue()
+        {
+            BinaryTree<int> tree = new BinaryTree<int>();
+            tree.Root = new Node<int>(10);
+            tree.Root.Left = new Node<int>(5);
+            tree.Root.Right = new Node<int>(15);
+            tree.Root.Left.Left = new Node<int>(3);
+            tree.Root.Left.Right = new Node<int>(8);
+            tree.Root.Right.Right = new Node<int>(20);
+
+            int max = tree.MaximumValue();
+
+            Assert.Equal(20, max);
+        }
+
+
     }
 }

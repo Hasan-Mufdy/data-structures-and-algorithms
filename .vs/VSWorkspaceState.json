@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets"
+    "\\TreeImplementation",
+    "\\TreeImplementation\\TestProject1",
+    "\\TreeImplementation\\TreeImplementation"
   ],
+  "SelectedNode": "\\TreeImplementation\\TreeImplementation\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
