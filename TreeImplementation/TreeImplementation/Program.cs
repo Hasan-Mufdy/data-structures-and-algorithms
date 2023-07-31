@@ -24,6 +24,10 @@ internal class Program
 
         Console.WriteLine("Post-order Traversal");
         Console.WriteLine(string.Join(", ", binarySearchTree.PostOrderTraversal()));
+
+        ////////////////////////////////////////////////////////////////////////////////
+
+        Console.WriteLine("maximum value in the tree is: " + binarySearchTree.MaximumValue());
     }
 }
 
@@ -49,6 +53,30 @@ public class BinaryTree<T>
     {
         Root = null;
     }
+
+    /// ///////////////////////////////////////////////////////////////////////////////////
+    public T MaximumValue()
+    {
+        T max = default(T);
+
+        Action<Node<T>> inOrderTraversal = null;
+        inOrderTraversal = (node) =>
+        {
+            if (node != null)
+            {
+                inOrderTraversal(node.Left);
+                if (Comparer<T>.Default.Compare(node.Value, max) > 0)
+                {
+                    max = node.Value;
+                }
+                inOrderTraversal(node.Right);
+            }
+        };
+        inOrderTraversal(Root);
+        return max;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////
 
     public List<T> PreOrderTraversal()
     {
