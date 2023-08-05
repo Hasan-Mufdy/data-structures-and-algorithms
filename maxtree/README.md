@@ -6,6 +6,8 @@ Find the Maximum Value in a Binary Tree
 
 ## Whiteboard Process
 
+![whiteboard](/assets/maxtree.jpg)
+
 ## Approach & Efficiency
 time complexity for the method is O(n), because In the worst-case scenario, the method needs to visit all the nodes in the binary tree to find the maximum value.
 

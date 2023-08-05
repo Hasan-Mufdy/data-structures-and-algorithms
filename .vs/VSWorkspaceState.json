@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\maxtree",
+    "\\TreeBreadth-first",
     "\\TreeImplementation",
     "\\TreeImplementation\\TestProject1",
     "\\TreeImplementation\\TreeImplementation"
   ],
-  "SelectedNode": "\\TreeImplementation\\TreeImplementation\\Program.cs",
+  "SelectedNode": "\\TreeBreadth-first",
   "PreviewInSolutionExplorer": false
 }
