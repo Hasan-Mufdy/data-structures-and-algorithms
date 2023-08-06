@@ -26,7 +26,7 @@ internal class Program
         //Console.WriteLine("Post-order Traversal");
         //Console.WriteLine(string.Join(", ", binarySearchTree.PostOrderTraversal()));
 
-        //////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
 
         //Console.WriteLine("maximum value in the tree is: " + binarySearchTree.MaximumValue());
 
@@ -53,6 +53,11 @@ internal class Program
         List<int> breadthFirstResult = binaryTree.BFS(binaryTree.Root);
         Console.WriteLine("BreadthFirst Traversal, in binaryTree variable: ");
         Console.WriteLine(string.Join(" - ", breadthFirstResult));
+        //////////////////////////////////////////////////////////////////////////////////  max value:
+
+        Console.WriteLine("maximum value in the tree is: " + binaryTree.MaximumValue());
+
+        //////////////////////////////////////////////////////////////////////////////////////////////
     }
 }
 
@@ -80,26 +85,61 @@ public class BinaryTree<T>
     }
 
     /// ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+    //public T MaximumValue()
+    //{
+    //    T max = default(T);
+
+    //    Action<Node<T>> inOrderTraversal = null;
+    //    inOrderTraversal = (node) =>
+    //    {
+    //        if (node != null)
+    //        {
+    //            inOrderTraversal(node.Left);
+    //            if (Comparer<T>.Default.Compare(node.Value, max) > 0)
+    //            {
+    //                max = node.Value;
+    //            }
+    //            inOrderTraversal(node.Right);
+    //        }
+    //    };
+    //    inOrderTraversal(Root);
+    //    return max;
+    //}
+
+    //// the second solution:(not using BinarySearchTree)
     public T MaximumValue()
     {
         T max = default(T);
 
-        Action<Node<T>> inOrderTraversal = null;
-        inOrderTraversal = (node) =>
+        Queue<Node<T>> queue = new Queue<Node<T>>();
+        queue.Enqueue(Root);
+
+        while (queue.Count > 0)
         {
-            if (node != null)
+            Node<T> currentNode = queue.Dequeue();
+
+            if (Comparer<T>.Default.Compare(currentNode.Value, max) > 0)
             {
-                inOrderTraversal(node.Left);
-                if (Comparer<T>.Default.Compare(node.Value, max) > 0)
-                {
-                    max = node.Value;
-                }
-                inOrderTraversal(node.Right);
+                max = currentNode.Value;
             }
-        };
-        inOrderTraversal(Root);
+
+            if (currentNode.Left != null)
+            {
+                queue.Enqueue(currentNode.Left);
+            }
+
+            if (currentNode.Right != null)
+            {
+                queue.Enqueue(currentNode.Right);
+            }
+        }
         return max;
     }
+
 
     ////////////////////////////////////////////////////////////////////////////////////////
 
