@@ -14,3 +14,4 @@
 - [Trees](/trees/README.md)
 - [tree-max](/trees/README.md)
 - [Breadth-first Traversal](/TreeBreadth-first/README.md)
+- [tree-fizz-buzz](/tree-fizz-buzz/README.md)
