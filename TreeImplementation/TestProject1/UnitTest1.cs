@@ -27,7 +27,21 @@ namespace TestProject1
         }
 
 
+        [Fact]
+        public void SumOddNodes_ShouldReturn_CorrectSum()
+        {
+            BinarySearchTree<int> bst = new BinarySearchTree<int>();
+            bst.Add(5);
+            bst.Add(3);
+            bst.Add(2);
+            bst.Add(4);
+            bst.Add(9);
 
+            int oddSum = bst.SumOddNodes();
+
+            int expectedSum = 5 + 3 + 9;
+            Assert.Equal(expectedSum, oddSum);
+        }
 
 
 

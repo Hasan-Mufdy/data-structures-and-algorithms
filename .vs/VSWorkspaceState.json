@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
     "\\maxtree",
-    "\\TreeBreadth-first",
+    "\\tree-fizz-buzz",
     "\\TreeImplementation",
     "\\TreeImplementation\\TestProject1",
     "\\TreeImplementation\\TreeImplementation"
