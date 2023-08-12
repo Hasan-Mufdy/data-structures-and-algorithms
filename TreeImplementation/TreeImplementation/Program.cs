@@ -6,29 +6,29 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        //BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>();
+        BinarySearchTree<int> binarySearchTree = new BinarySearchTree<int>();
 
-        //binarySearchTree.Add(5);
-        //binarySearchTree.Add(3);
-        //binarySearchTree.Add(7);
-        //binarySearchTree.Add(2);
-        //binarySearchTree.Add(4);
-        //binarySearchTree.Add(6);
-        //binarySearchTree.Add(8);
+        binarySearchTree.Add(5);
+        binarySearchTree.Add(3);
+        binarySearchTree.Add(7);
+        binarySearchTree.Add(2);
+        binarySearchTree.Add(4);
+        binarySearchTree.Add(6);
+        binarySearchTree.Add(8);
 
-        //Console.WriteLine("Pre-Order Traversal");
-        //string resultString = string.Join(",", binarySearchTree.PreOrderTraversal());
-        //Console.WriteLine(resultString);
+        Console.WriteLine("Pre-Order Traversal");
+        string resultString = string.Join(",", binarySearchTree.PreOrderTraversal());
+        Console.WriteLine(resultString);
 
-        //Console.WriteLine("In-order Traversal");
-        //Console.WriteLine(string.Join(", ", binarySearchTree.InOrderTraversal()));
+        Console.WriteLine("In-order Traversal");
+        Console.WriteLine(string.Join(", ", binarySearchTree.InOrderTraversal()));
 
-        //Console.WriteLine("Post-order Traversal");
-        //Console.WriteLine(string.Join(", ", binarySearchTree.PostOrderTraversal()));
+        Console.WriteLine("Post-order Traversal");
+        Console.WriteLine(string.Join(", ", binarySearchTree.PostOrderTraversal()));
 
-        ////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////
 
-        //Console.WriteLine("maximum value in the tree is: " + binarySearchTree.MaximumValue());
+        Console.WriteLine("maximum value in the tree is: " + binarySearchTree.MaximumValue());
 
         //////////////////////////////////////////////////////////////////////////////// breadth-search
         ///
@@ -65,7 +65,11 @@ internal class Program
         BinaryTree<string> fizzBuzzTree = binaryTree.FizzBuzzTree();
 
         Console.WriteLine("FizzBuzz Tree: " + string.Join(" - ", fizzBuzzTree.BFS(fizzBuzzTree.Root)));
-
+        //////////////////////////////////////////////////////////////////////////////////////////////
+        // sum of odd numbers:
+        Console.WriteLine("the sum of odd numbers in the binarySearchTree var: ");
+        int oddSum = binarySearchTree.SumOddNodes();
+        Console.WriteLine("result: " + oddSum);
     }
 }
 
@@ -92,6 +96,54 @@ public class BinaryTree<T>
         Root = null;
     }
 
+
+    ///////////////////////////////////////////////////////////////////////////////////////
+    ///
+    ///sum of odd numbers in a tree:   the first way(using binary tree)
+    ///
+    //public void Insert(T value)
+    //{
+    //    Root = InsertN(Root, value);
+    //}
+
+    //public Node<T> InsertN(Node<T> root, T value)
+    //{
+    //    if (root == null)
+    //    {
+    //        root = new Node<T>(value);
+    //        return root;
+    //    }
+
+    //    int comparison = Comparer<T>.Default.Compare(value, root.Value);
+
+    //    if (comparison < 0)
+    //        root.Left = InsertN(root.Left, value);
+    //    else if (comparison > 0)
+    //        root.Right = InsertN(root.Right, value);
+
+    //    return root;
+    //}
+
+    //public int SumOddNodes()
+    //{
+    //    return SumOddNodesRec(Root);
+    //}
+
+    //private int SumOddNodesRec(Node<T> root)
+    //{
+    //    if (root == null)
+    //        return 0;
+
+    //    int sum = SumOddNodesRec(root.Left);
+
+    //    int intValue = Convert.ToInt32(root.Value);
+    //    if (intValue % 2 != 0)
+    //        sum += intValue;
+
+    //    sum += SumOddNodesRec(root.Right);
+
+    //    return sum;
+    //}
     /// ///////////////////////////////////////////////////////////////////////////////////
 
     public BinaryTree<string> FizzBuzzTree()
@@ -316,39 +368,62 @@ public class BinaryTree<T>
 
 
 
-//public class BinarySearchTree<T> : BinaryTree<T> where T : IComparable
-//{
-//    public void Add(T value)
-//    {
-//        Root = AddNode(Root, value);
-//    }
+public class BinarySearchTree<T> : BinaryTree<T> where T : IComparable
+{
+    public void Add(T value)
+    {
+        Root = AddNode(Root, value);
+    }
 
-//    private Node<T> AddNode(Node<T> node, T value)
-//    {
-//        if (node == null)
-//            return new Node<T>(value);
+    private Node<T> AddNode(Node<T> node, T value)
+    {
+        if (node == null)
+            return new Node<T>(value);
 
-//        if (value.CompareTo(node.Value) < 0)
-//            node.Left = AddNode(node.Left, value);
-//        else if (value.CompareTo(node.Value) > 0)
-//            node.Right = AddNode(node.Right, value);
+        if (value.CompareTo(node.Value) < 0)
+            node.Left = AddNode(node.Left, value);
+        else if (value.CompareTo(node.Value) > 0)
+            node.Right = AddNode(node.Right, value);
 
-//        return node;
-//    }
+        return node;
+    }
+    //////////////////////////////////////////////////////////
+    ///
+    public int SumOddNodes()
+    {
+        return SumOddNodesN(Root);
+    }
+    private int SumOddNodesN(Node<T> root)
+    {
+        if (root == null)
+            return 0;
 
-//    public bool Contains(T value)
-//    {
-//        return SearchNode(Root, value) != null;
-//    }
+        int sum = SumOddNodesN(root.Left);
 
-//    private Node<T> SearchNode(Node<T> node, T value)
-//    {
-//        if (node == null || value.CompareTo(node.Value) == 0)
-//            return node;
+        // check if odd to add
+        int intValue = Convert.ToInt32(root.Value);
+        if (intValue % 2 != 0)
+            sum += intValue;
 
-//        if (value.CompareTo(node.Value) < 0)
-//            return SearchNode(node.Left, value);
-//        else
-//            return SearchNode(node.Right, value);
-//    }
-//}
+        sum += SumOddNodesN(root.Right);
+
+        return sum;
+    }
+    //////////////////////////////////////////////////////
+
+    public bool Contains(T value)
+    {
+        return SearchNode(Root, value) != null;
+    }
+
+    private Node<T> SearchNode(Node<T> node, T value)
+    {
+        if (node == null || value.CompareTo(node.Value) == 0)
+            return node;
+
+        if (value.CompareTo(node.Value) < 0)
+            return SearchNode(node.Left, value);
+        else
+            return SearchNode(node.Right, value);
+    }
+}
