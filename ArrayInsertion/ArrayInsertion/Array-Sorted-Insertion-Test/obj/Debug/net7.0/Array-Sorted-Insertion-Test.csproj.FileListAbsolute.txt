@@ -1,0 +1,5 @@
+C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\Array-Sorted-Insertion-Test\obj\Debug\net7.0\Array-Sorted-Insertion-Test.csproj.AssemblyReference.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\Array-Sorted-Insertion-Test\obj\Debug\net7.0\Array-Sorted-Insertion-Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\Array-Sorted-Insertion-Test\obj\Debug\net7.0\Array-Sorted-Insertion-Test.AssemblyInfoInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\Array-Sorted-Insertion-Test\obj\Debug\net7.0\Array-Sorted-Insertion-Test.AssemblyInfo.cs
+C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\Array-Sorted-Insertion-Test\obj\Debug\net7.0\Array-Sorted-Insertion-Test.csproj.CoreCompileInputs.cache
