@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayInsertion", "ArrayInsertion\ArrayInsertion.csproj", "{6D006EA5-1821-4601-9FF1-7C7C5731144D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayInsertion", "ArrayInsertion\ArrayInsertion.csproj", "{6D006EA5-1821-4601-9FF1-7C7C5731144D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array-Sorted-Insertion-Test", "Array-Sorted-Insertion-Test\Array-Sorted-Insertion-Test.csproj", "{21B82514-47D7-4E03-AD32-F9A9D809F465}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array_Sorted_Insertion_Test", "Array_Sorted_Insertion_Test\Array_Sorted_Insertion_Test.csproj", "{46A7273B-B347-4468-A753-1A81C3EBD19B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{6D006EA5-1821-4601-9FF1-7C7C5731144D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D006EA5-1821-4601-9FF1-7C7C5731144D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D006EA5-1821-4601-9FF1-7C7C5731144D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21B82514-47D7-4E03-AD32-F9A9D809F465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21B82514-47D7-4E03-AD32-F9A9D809F465}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21B82514-47D7-4E03-AD32-F9A9D809F465}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21B82514-47D7-4E03-AD32-F9A9D809F465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A7273B-B347-4468-A753-1A81C3EBD19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A7273B-B347-4468-A753-1A81C3EBD19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A7273B-B347-4468-A753-1A81C3EBD19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A7273B-B347-4468-A753-1A81C3EBD19B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
