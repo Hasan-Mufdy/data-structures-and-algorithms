@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\maxtree",
-    "\\TreeImplementation\\TestProject1",
-    "\\TreeImplementation\\TreeImplementation"
+    "\\ArrayInsertion",
+    "\\ArrayInsertion\\ArrayInsertion",
+    "\\ArrayInsertion\\ArrayInsertion\\Array-Sorted-Insertion-Test",
+    "\\ArrayInsertion\\ArrayInsertion\\ArrayInsertion",
+    "\\maxtree"
   ],
-  "SelectedNode": "\\ArrayInsertion",
+  "SelectedNode": "\\ArrayInsertion\\ArrayInsertion\\Array-Sorted-Insertion-Test\\UnitTest1.cs",
   "PreviewInSolutionExplorer": false
 }

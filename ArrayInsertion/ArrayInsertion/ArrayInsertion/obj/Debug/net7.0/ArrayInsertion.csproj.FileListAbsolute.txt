@@ -3,7 +3,6 @@ C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInse
 C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\bin\Debug\net7.0\ArrayInsertion.runtimeconfig.json
 C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\bin\Debug\net7.0\ArrayInsertion.dll
 C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\bin\Debug\net7.0\ArrayInsertion.pdb
-C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\obj\Debug\net7.0\ArrayInsertion.csproj.AssemblyReference.cache
 C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\obj\Debug\net7.0\ArrayInsertion.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\obj\Debug\net7.0\ArrayInsertion.AssemblyInfoInputs.cache
 C:\Users\HM\source\repos\data-structures-and-algorithms\ArrayInsertion\ArrayInsertion\ArrayInsertion\obj\Debug\net7.0\ArrayInsertion.AssemblyInfo.cs
