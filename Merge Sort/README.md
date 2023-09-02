@@ -1,6 +1,22 @@
 # Merge Sort
 
+## Problem domain
 Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array
+
+## big O
+
+The Merge Sort algorithm has a time complexity of O(n log n), where "n" is the number of elements in the array being sorted. This makes Merge Sort one of the most efficient comparison-based sorting algorithms for large datasets.
+
+## Whiteboard
+
+![whiteboard](merge.jpg)
+
+## Visualization:
+#### given this array: [8,4,23,42,16,15]
+
+- Reverse-sorted: [20,18,12,8,5,-2]
+- Few uniques: [5,12,7,5,5,7]
+- Nearly-sorted: [2,3,5,7,13,11]
 
 ## Pseudo Code
 ```
@@ -39,7 +55,7 @@ ALGORITHM Merge(left, right, arr)
        set remaining entries in arr to remaining values in left
 ```
 
-## walkthrough :
+## algorithm walkthrough :
 
 Walkthrough of the Code:
 
@@ -158,3 +174,4 @@ public static void MergeSort(int[] arr)
             Assert.Equal(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, input);
         }
 ```
+
