@@ -16,3 +16,4 @@
 - [Breadth-first Traversal](/TreeBreadth-first/README.md)
 - [tree-fizz-buzz](/tree-fizz-buzz/README.md)
 - [Array sorted insertion](/ArrayInsertion/README.md)
+- [merge sort](/MergeSort/README.md)
