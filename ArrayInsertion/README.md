@@ -3,6 +3,10 @@
 ## problem domain
 return a sorted array if integers.
 
+## whiteboard
+
+![ArrayInsertion](Arrayinsertion.jpg)
+
 ## Pseudocode
 Insert(int[] sorted, int value)
   initialize i to 0
@@ -42,6 +46,32 @@ Return the sorted array.
 
 ## big o
 The time complexity of the insertion sort algorithm is O(n^2) because When the input array is in reverse order, the algorithm will perform the maximum number of comparisons and shifts.
+
+## problem summary
+Input: An array of integers called input that will be sorted.
+
+Output: A sorted array of integers called sorted.
+
+1. Create a new array called sorted with the same length as the input array.
+2. Set the first element of the sorted array to be the first element of the input array
+3. Iterate over the remaining elements in the input array from index 1 to the end
+4. For each element at index i in the input array, do the following:
+
+- Store the value of the current element in a variable called value.
+
+- Initialize an index variable j to i - 1. This index will be used to compare the value with elements in the sorted portion of the sorted array.
+
+- While j is greater than or equal to 0 and the value at sorted[j] is greater than value, do the following:
+
+- Move the value at sorted[j] one position to the right (i.e., sorted[j + 1] = sorted[j]).
+Decrement j by 1.
+- Insert value at the correct position in the sorted array (i.e., sorted[j + 1] = value).
+
+- Repeat steps 4 for all elements in the input array.
+
+- After the loop is completed, the sorted array will contain the elements in ascending order.
+
+- Return the sorted array as the sorted result.
 
 ## Code:
 ```

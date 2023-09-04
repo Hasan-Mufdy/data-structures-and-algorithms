@@ -5,8 +5,11 @@
     "\\ArrayInsertion\\ArrayInsertion",
     "\\ArrayInsertion\\ArrayInsertion\\Array-Sorted-Insertion-Test",
     "\\ArrayInsertion\\ArrayInsertion\\ArrayInsertion",
-    "\\maxtree"
+    "\\ArrayInsertion\\ArrayInsertion\\Array_Sorted_Insertion_Test",
+    "\\assets",
+    "\\maxtree",
+    "\\MergeSort"
   ],
-  "SelectedNode": "\\ArrayInsertion\\ArrayInsertion\\Array-Sorted-Insertion-Test\\UnitTest1.cs",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
