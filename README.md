@@ -16,3 +16,4 @@
 - [tree-fizz-buzz](/tree-fizz-buzz/README.md)
 - [Array sorted insertion](/ArrayInsertion/README.md)
 - [merge sort](/MergeSort/README.md)
+- [Sorting: Comparisons](/SortingComparisons/README.md)
