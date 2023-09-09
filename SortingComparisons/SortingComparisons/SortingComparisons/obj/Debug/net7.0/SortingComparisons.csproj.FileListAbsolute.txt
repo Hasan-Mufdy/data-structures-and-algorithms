@@ -1,0 +1,14 @@
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\bin\Debug\net7.0\SortingComparisons.exe
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\bin\Debug\net7.0\SortingComparisons.deps.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\bin\Debug\net7.0\SortingComparisons.runtimeconfig.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\bin\Debug\net7.0\SortingComparisons.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\bin\Debug\net7.0\SortingComparisons.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.AssemblyInfoInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.AssemblyInfo.cs
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.csproj.CoreCompileInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\refint\SortingComparisons.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\SortingComparisons.genruntimeconfig.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\SortingComparisons\SortingComparisons\SortingComparisons\obj\Debug\net7.0\ref\SortingComparisons.dll

@@ -2,14 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\ArrayInsertion",
-    "\\ArrayInsertion\\ArrayInsertion",
     "\\ArrayInsertion\\ArrayInsertion\\Array-Sorted-Insertion-Test",
     "\\ArrayInsertion\\ArrayInsertion\\ArrayInsertion",
     "\\ArrayInsertion\\ArrayInsertion\\Array_Sorted_Insertion_Test",
-    "\\assets",
     "\\maxtree",
-    "\\MergeSort"
+    "\\MergeSort",
+    "\\SortingComparisons"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\SortingComparisons",
   "PreviewInSolutionExplorer": false
 }
