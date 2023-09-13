@@ -1,14 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ArrayInsertion",
-    "\\ArrayInsertion\\ArrayInsertion\\Array-Sorted-Insertion-Test",
-    "\\ArrayInsertion\\ArrayInsertion\\ArrayInsertion",
-    "\\ArrayInsertion\\ArrayInsertion\\Array_Sorted_Insertion_Test",
-    "\\maxtree",
-    "\\MergeSort",
-    "\\SortingComparisons"
+    "\\hashtable",
+    "\\MergeSort"
   ],
-  "SelectedNode": "\\SortingComparisons",
+  "SelectedNode": "\\hashtable",
   "PreviewInSolutionExplorer": false
 }
