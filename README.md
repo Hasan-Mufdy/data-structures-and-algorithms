@@ -17,3 +17,4 @@
 - [Array sorted insertion](/ArrayInsertion/README.md)
 - [merge sort](/MergeSort/README.md)
 - [Sorting: Comparisons](/SortingComparisons/README.md)
+- [Hash Table Implementation](/hashtable/README.md)
