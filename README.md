@@ -18,3 +18,4 @@
 - [merge sort](/MergeSort/README.md)
 - [Sorting: Comparisons](/SortingComparisons/README.md)
 - [Hash Table Implementation](/hashtable/README.md)
+- [hashmap repeated word](/hashmaprepeatedword/README.md)
