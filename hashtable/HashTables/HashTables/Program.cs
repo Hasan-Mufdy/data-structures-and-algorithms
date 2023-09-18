@@ -24,7 +24,10 @@ namespace HashTable
             {
                 Console.WriteLine(key);
             }
-
+            ///////////////////////////////////////////////////////////////////////////////
+            string input = "hello hello kdjsfl kdsjfl kkajeio idsjfo rr rr";
+            string firstRepeatedWord = hashtable.FindFirstRepeatedWord(input);
+            Console.WriteLine("First repeated word: " + firstRepeatedWord);
         }
     }
 
@@ -52,6 +55,32 @@ namespace HashTable
             Map = new LinkedList<HashNode<TKey, TValue>>[size];
         }
 
+
+        ////////////////////////////////////////////////////////////////////////
+        public string FindFirstRepeatedWord(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+                return null;
+
+            string[] words = input.Split(' ');
+
+            HashSet<string> seenWords = new HashSet<string>();
+
+            foreach (string word in words)
+            {
+                string cleanedWord = word;
+                if (!string.IsNullOrWhiteSpace(cleanedWord))
+                {
+                    if (seenWords.Contains(cleanedWord))
+                        return cleanedWord;
+
+                    seenWords.Add(cleanedWord);
+                }
+            }
+
+            return null;
+        }
+        ////////////////////////////////////////////////////////////////////////
         private int Hash(TKey key)
         {
             int hashValue = 0;
