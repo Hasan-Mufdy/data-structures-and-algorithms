@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\hashtable\\HashTables",
-    "\\hashtable\\HashTables\\HashTables",
     "\\HashTree",
+    "\\HashTree\\HashTree",
+    "\\HashTree\\HashTree\\HashTree",
     "\\MergeSort"
   ],
-  "SelectedNode": "\\HashTree",
+  "SelectedNode": "\\HashTree\\HashTree.jpg",
   "PreviewInSolutionExplorer": false
 }
