@@ -19,3 +19,4 @@
 - [Sorting: Comparisons](/SortingComparisons/README.md)
 - [Hash Table Implementation](/hashtable/README.md)
 - [hashmap repeated word](/hashmaprepeatedword/README.md)
+- [hash tree](/HashTree/README.md)
