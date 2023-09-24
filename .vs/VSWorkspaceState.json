@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HashTree",
-    "\\HashTree\\HashTree",
-    "\\HashTree\\HashTree\\HashTree",
+    "\\HashMapLeftJoin",
     "\\MergeSort"
   ],
-  "SelectedNode": "\\HashTree\\HashTree.jpg",
+  "SelectedNode": "\\HashMapLeftJoin\\README.md",
   "PreviewInSolutionExplorer": false
 }
