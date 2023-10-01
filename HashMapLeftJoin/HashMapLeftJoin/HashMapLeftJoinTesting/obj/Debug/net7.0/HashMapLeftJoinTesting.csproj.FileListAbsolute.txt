@@ -97,3 +97,9 @@ C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapL
 C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\obj\Debug\net7.0\HashMapLeftJoinTesting.pdb
 C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\obj\Debug\net7.0\HashMapLeftJoinTesting.genruntimeconfig.cache
 C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\obj\Debug\net7.0\ref\HashMapLeftJoinTesting.dll
+C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\bin\Debug\net7.0\HashMapLeftJoin.deps.json
+C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\bin\Debug\net7.0\HashMapLeftJoin.runtimeconfig.json
+C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\bin\Debug\net7.0\HashMapLeftJoin.exe
+C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\bin\Debug\net7.0\HashMapLeftJoin.dll
+C:\Users\HM\Source\Repos\data-structures-and-algorithms\HashMapLeftJoin\HashMapLeftJoin\HashMapLeftJoinTesting\bin\Debug\net7.0\HashMapLeftJoin.pdb
