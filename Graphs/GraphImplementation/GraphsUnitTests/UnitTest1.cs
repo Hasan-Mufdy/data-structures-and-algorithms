@@ -65,5 +65,44 @@ namespace GraphsUnitTests
             Assert.Contains(neighborsOfVertex1, edge => edge.Vertex.Value == vertex2.Value && edge.Weight == 10);
             Assert.Contains(neighborsOfVertex1, edge => edge.Vertex.Value == vertex3.Value && edge.Weight == 20);
         }
+        ///// breadth first
+        [Fact]
+        public void BreadthFirstTraversalShouldTraverseInCorrectOrder()
+        {
+            var graph = new Graph<string>();
+            var vertexA = graph.AddVertex("Pandora");
+            var vertexB = graph.AddVertex("Arendelle");
+            var vertexC = graph.AddVertex("Metroville");
+            var vertexD = graph.AddVertex("Monstroplolis");
+            var vertexE = graph.AddVertex("Narnia");
+            var vertexF = graph.AddVertex("Naboo");
+
+            graph.AddEdge(vertexA, vertexB);
+            graph.AddEdge(vertexB, vertexC);
+            graph.AddEdge(vertexC, vertexD);
+            graph.AddEdge(vertexD, vertexE);
+            graph.AddEdge(vertexE, vertexF);
+
+            var result = graph.BreadthFirstTraversal(vertexA);
+
+            Assert.Collection(result,
+                vertex => Assert.Equal("Pandora", vertex.Value),
+                vertex => Assert.Equal("Arendelle", vertex.Value),
+                vertex => Assert.Equal("Metroville", vertex.Value),
+                vertex => Assert.Equal("Monstroplolis", vertex.Value),
+                vertex => Assert.Equal("Narnia", vertex.Value),
+                vertex => Assert.Equal("Naboo", vertex.Value)
+            );
+        }
+
+        [Fact]
+        public void BreadthFirstTraversalInvalidStartVertexShouldThrowException()
+        {
+            var graph = new Graph<string>();
+            var invalidVertex = new Vertex<string>("InvalidVertex");
+
+            var exception = Assert.Throws<InvalidOperationException>(() => graph.BreadthFirstTraversal(invalidVertex));
+            Assert.Equal("start vertex is not in the graph.", exception.Message);
+        }
     }
 }
