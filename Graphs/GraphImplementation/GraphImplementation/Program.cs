@@ -48,9 +48,50 @@ namespace GraphDemo
             Console.WriteLine();
 
             //////////////////////////////////////////////////////////////////////////////
+            Graph<string> graph2 = new Graph<string>();
+
+            Vertex<string> a2 = graph2.AddVertex("a");
+            Vertex<string> b2 = graph2.AddVertex("b");
+            Vertex<string> c2 = graph2.AddVertex("c");
+            Vertex<string> d2 = graph2.AddVertex("d");
+            Vertex<string> e2 = graph2.AddVertex("e");
+            Vertex<string> f2 = graph2.AddVertex("f");
+            Vertex<string> g2 = graph2.AddVertex("g");
+            Vertex<string> h2 = graph2.AddVertex("h");
+
+            graph2.AddEdge(a2, b2);
+            graph2.AddEdge(a2, d2);
+
+            graph2.AddEdge(b2, c2);
+            graph2.AddEdge(b2, d2);
+
+            graph2.AddEdge(c2, g2);
+
+            graph2.AddEdge(d2, e2);
+            graph2.AddEdge(d2, h2);
+            graph2.AddEdge(d2, f2);
+            // graph2.AddEdge(d2, a2);
+            // graph2.AddEdge(d2, b2);
+
+            // graph2.AddEdge(e2, d2);
+            // graph2.AddEdge(f2, d2);
+            graph2.AddEdge(f2, h2);
+
+            //graph2.AddEdge(g2, h2);
+            graph2.AddEdge(h2, f2);
+            graph2.AddEdge(h2, d2);
 
 
-            
+            //////////////////////////////////////////////////////////////////////////////
+            Console.WriteLine("Depth-First Pre-Order Traversal:");
+            var dfPreOrder = graph2.DepthFirstPreOrderTraversal(a2);
+            foreach (var vertex in dfPreOrder)
+            {
+                Console.Write($"{vertex.Value} ");
+            }
+            Console.WriteLine();
+
+
 
         }
     }
@@ -78,7 +119,32 @@ namespace GraphDemo
 
     public class Graph<T>
     {
-        
+        public ICollection<Vertex<T>> DepthFirstPreOrderTraversal(Vertex<T> startVertex)
+        {
+            if (!AdjacencyList.ContainsKey(startVertex))
+                throw new InvalidOperationException("Start vertex is not in the graph.");
+
+            List<Vertex<T>> visitedNodes = new List<Vertex<T>>();
+            HashSet<Vertex<T>> visited = new HashSet<Vertex<T>>();
+
+            DFPO(startVertex, visited, visitedNodes);
+
+            return visitedNodes;
+        }
+
+        private void DFPO(Vertex<T> currentVertex, HashSet<Vertex<T>> visited, List<Vertex<T>> visitedNodes)
+        {
+            visited.Add(currentVertex);
+            visitedNodes.Add(currentVertex);
+
+            foreach (var edge in AdjacencyList[currentVertex])
+            {
+                if (!visited.Contains(edge.Vertex))
+                {
+                    DFPO(edge.Vertex, visited, visitedNodes);
+                }
+            }
+        }
 
         ////////////////////////////////////////////////////////////////////////////
         public ICollection<Vertex<T>> BreadthFirstTraversal(Vertex<T> startVertex)
