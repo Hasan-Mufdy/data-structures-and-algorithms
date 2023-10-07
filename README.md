@@ -24,3 +24,4 @@
 - [Graphs](/Graphs/README.md)
 - [Graphs breadth first search](/Graphbreadthsearch/README.md)
 - [Graph Business Trip](/graphbusinesstrip/README.md)
+- [depth first pre-order traversal](/depthfirstpre/README.md)
