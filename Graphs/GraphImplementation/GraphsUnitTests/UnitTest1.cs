@@ -102,7 +102,53 @@ namespace GraphsUnitTests
             var invalidVertex = new Vertex<string>("InvalidVertex");
 
             var exception = Assert.Throws<InvalidOperationException>(() => graph.BreadthFirstTraversal(invalidVertex));
-            Assert.Equal("start vertex is not in the graph.", exception.Message);
+            Assert.Equal("Start vertex is not in the graph.", exception.Message);
+        }
+        //////////////////////
+
+        [Fact]
+        public void TestDepthFirstPreOrderTraversal()
+        {
+            Graph<string> graph2 = new Graph<string>();
+
+            Vertex<string> a2 = graph2.AddVertex("a");
+            Vertex<string> b2 = graph2.AddVertex("b");
+            Vertex<string> c2 = graph2.AddVertex("c");
+            Vertex<string> d2 = graph2.AddVertex("d");
+            Vertex<string> e2 = graph2.AddVertex("e");
+            Vertex<string> f2 = graph2.AddVertex("f");
+            Vertex<string> g2 = graph2.AddVertex("g");
+            Vertex<string> h2 = graph2.AddVertex("h");
+
+            graph2.AddEdge(a2, b2);
+            graph2.AddEdge(a2, d2);
+
+            graph2.AddEdge(b2, c2);
+            graph2.AddEdge(b2, d2);
+
+            graph2.AddEdge(c2, g2);
+
+            graph2.AddEdge(d2, e2);
+            graph2.AddEdge(d2, h2);
+            graph2.AddEdge(d2, f2);
+            // graph2.AddEdge(d2, a2);
+            // graph2.AddEdge(d2, b2);
+
+            // graph2.AddEdge(e2, d2);
+            // graph2.AddEdge(f2, d2);
+            graph2.AddEdge(f2, h2);
+
+            //graph2.AddEdge(g2, h2);
+            graph2.AddEdge(h2, f2);
+            graph2.AddEdge(h2, d2);
+
+            var dfsPreOrder = graph2.DepthFirstPreOrderTraversal(a2);
+
+            var dfsPreOrderList = dfsPreOrder.Select(v => v.Value).ToList();
+
+            List<string> expectedPreOrder = new List<string> { "a", "b", "c", "g", "d", "e", "h", "f" };
+
+            Assert.Equal(expectedPreOrder, dfsPreOrderList);
         }
     }
 }
