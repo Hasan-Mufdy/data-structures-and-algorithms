@@ -23,3 +23,4 @@
 - [Hash Map Left Join](/HashMapLeftJoin/README.md)
 - [Graphs](/Graphs/README.md)
 - [Graphs breadth first search](/Graphbreadthsearch/README.md)
+- [Graph Business Trip](/graphbusinesstrip/README.md)

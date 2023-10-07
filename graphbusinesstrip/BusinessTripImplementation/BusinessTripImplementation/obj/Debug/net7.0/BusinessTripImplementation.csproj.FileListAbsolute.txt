@@ -1,0 +1,14 @@
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\bin\Debug\net7.0\BusinessTripImplementation.exe
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\bin\Debug\net7.0\BusinessTripImplementation.deps.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\bin\Debug\net7.0\BusinessTripImplementation.runtimeconfig.json
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\bin\Debug\net7.0\BusinessTripImplementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\bin\Debug\net7.0\BusinessTripImplementation.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.AssemblyInfoInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.AssemblyInfo.cs
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.csproj.CoreCompileInputs.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\refint\BusinessTripImplementation.dll
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.pdb
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\BusinessTripImplementation.genruntimeconfig.cache
+C:\Users\HM\source\repos\data-structures-and-algorithms\graphbusinesstrip\BusinessTripImplementation\BusinessTripImplementation\obj\Debug\net7.0\ref\BusinessTripImplementation.dll

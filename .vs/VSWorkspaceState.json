@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Graphbreadthsearch",
+    "\\graphbusinesstrip",
     "\\Graphs",
+    "\\Graphs\\GraphImplementation",
+    "\\Graphs\\GraphImplementation\\GraphImplementation",
+    "\\Graphs\\GraphImplementation\\GraphsUnitTests",
     "\\MergeSort"
   ],
+  "SelectedNode": "\\graphbusinesstrip",
   "PreviewInSolutionExplorer": false
 }

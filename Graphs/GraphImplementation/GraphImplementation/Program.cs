@@ -47,6 +47,11 @@ namespace GraphDemo
             }
             Console.WriteLine();
 
+            //////////////////////////////////////////////////////////////////////////////
+
+
+            
+
         }
     }
 
@@ -73,6 +78,9 @@ namespace GraphDemo
 
     public class Graph<T>
     {
+        
+
+        ////////////////////////////////////////////////////////////////////////////
         public ICollection<Vertex<T>> BreadthFirstTraversal(Vertex<T> startVertex)
         {
             if (!AdjacencyList.ContainsKey(startVertex))
